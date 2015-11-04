@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 43;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,8 +33,6 @@
 		4F94EE5507B308D400AE9F13 /* TEventHandler.cp in Sources */ = {isa = PBXBuildFile; fileRef = 332479130690D25200AAEC61 /* TEventHandler.cp */; };
 		4F94EE5707B308D400AE9F13 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
 		4F94EE5807B308D400AE9F13 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CDA02B03E6788F0B0001CA /* QuickTime.framework */; };
-		4F94EE5907B308D400AE9F13 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */; };
-		4F94EE5A07B308D400AE9F13 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +42,6 @@
 		332479120690D25200AAEC61 /* HIFramework.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HIFramework.h; path = ../HIFramework/HIFramework.h; sourceTree = SOURCE_ROOT; };
 		332479130690D25200AAEC61 /* TEventHandler.cp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = TEventHandler.cp; path = ../HIFramework/TEventHandler.cp; sourceTree = SOURCE_ROOT; };
 		332479140690D25200AAEC61 /* TEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TEventHandler.h; path = ../HIFramework/TEventHandler.h; sourceTree = SOURCE_ROOT; };
-		4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
-		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		4F94EE5C07B308D400AE9F13 /* Info-Dial.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-Dial.plist"; sourceTree = "<group>"; };
 		4F94EE5D07B308D400AE9F13 /* Dial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6001B38C02F742E80BCA0CB8 /* DialView.cp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DialView.cp; sourceTree = "<group>"; };
@@ -77,8 +73,6 @@
 			files = (
 				4F94EE5707B308D400AE9F13 /* Carbon.framework in Frameworks */,
 				4F94EE5807B308D400AE9F13 /* QuickTime.framework in Frameworks */,
-				4F94EE5907B308D400AE9F13 /* ApplicationServices.framework in Frameworks */,
-				4F94EE5A07B308D400AE9F13 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,8 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				20286C33FDCF999611CA2CEA /* Carbon.framework */,
-				4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */,
-				4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */,
 				60CDA02B03E6788F0B0001CA /* QuickTime.framework */,
 			);
 			name = "External Frameworks and Libraries";
@@ -201,7 +193,7 @@
 /* Begin PBXNativeTarget section */
 		4F94EE3A07B308D400AE9F13 /* Dial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE651B070C34728C00EC1FC8 /* Build configuration list for PBXNativeTarget "Dial" */;
+			buildConfigurationList = 4F2B046D08A025400055E173 /* Build configuration list for PBXNativeTarget "Dial" */;
 			buildPhases = (
 				4F94EE3B07B308D400AE9F13 /* Headers */,
 				4F94EE4407B308D400AE9F13 /* Resources */,
@@ -224,10 +216,12 @@
 /* Begin PBXProject section */
 		20286C28FDCF999611CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = BE651B0B0C34728C00EC1FC8 /* Build configuration list for PBXProject "Dial" */;
+			buildConfigurationList = 4F2B047108A025400055E173 /* Build configuration list for PBXProject "Dial" */;
+			compatibilityVersion = "Xcode 3.0";
 			hasScannedForEncodings = 1;
 			mainGroup = 20286C29FDCF999611CA2CEA /* Dial */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				4F94EE3A07B308D400AE9F13 /* Dial */,
 			);
@@ -348,128 +342,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BE651B080C34728C00EC1FC8 /* Development */ = {
+		4F2B046E08A025400055E173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = "";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				INFOPLIST_FILE = "Info-Dial.plist";
 				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
-				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = "-DDEBUG";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Dial;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		BE651B090C34728C00EC1FC8 /* Deployment */ = {
+		4F2B046F08A025400055E173 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				HEADER_SEARCH_PATHS = "";
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = "Info-Dial.plist";
 				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Dial;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-		BE651B0A0C34728C00EC1FC8 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-Dial.plist";
-				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Dial;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = app;
 			};
-			name = Default;
+			name = Release;
 		};
-		BE651B0C0C34728C00EC1FC8 /* Development */ = {
+		4F2B047208A025400055E173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOTS = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
-			name = Development;
+			name = Debug;
 		};
-		BE651B0D0C34728C00EC1FC8 /* Deployment */ = {
+		4F2B047308A025400055E173 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOTS = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
-			name = Deployment;
-		};
-		BE651B0E0C34728C00EC1FC8 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE651B070C34728C00EC1FC8 /* Build configuration list for PBXNativeTarget "Dial" */ = {
+		4F2B046D08A025400055E173 /* Build configuration list for PBXNativeTarget "Dial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE651B080C34728C00EC1FC8 /* Development */,
-				BE651B090C34728C00EC1FC8 /* Deployment */,
-				BE651B0A0C34728C00EC1FC8 /* Default */,
+				4F2B046E08A025400055E173 /* Debug */,
+				4F2B046F08A025400055E173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
-		BE651B0B0C34728C00EC1FC8 /* Build configuration list for PBXProject "Dial" */ = {
+		4F2B047108A025400055E173 /* Build configuration list for PBXProject "Dial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE651B0C0C34728C00EC1FC8 /* Development */,
-				BE651B0D0C34728C00EC1FC8 /* Deployment */,
-				BE651B0E0C34728C00EC1FC8 /* Default */,
+				4F2B047208A025400055E173 /* Debug */,
+				4F2B047308A025400055E173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
